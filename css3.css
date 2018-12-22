@@ -1,0 +1,77 @@
+.hello {
+	margin:30px auto;
+    border:2px solid #a1a1a1;
+	padding:10px 40px; 
+	width:300px;
+	height: 200px;
+	border-radius:25px;
+	background: radial-gradient(circle, red, yellow, green); /* 标准的语法 */
+	transition: transform 2s linear 0.5s;
+    -webkit-transition: transform 2s linear 0.5s; 
+}
+.hello:hover{
+	transform: rotateY(120deg);
+	-ms-transform: rotateY(120deg);
+	-webkit-transform: rotateY(120deg);
+}
+p{
+	text-shadow: 10px 10px 5px #888888;
+    width: 200px; 
+    border: 1px solid #000000;
+	word-wrap:break-word;
+	word-break: break-all;
+}
+
+@keyframes myfirst
+{
+	0%   {background: pink; left:0px; top:0px;}
+    25%  {background: lightsalmon; left:200px; top:0px;}
+    50%  {background: lightblue; left:200px; top:200px;}
+    75%  {background: lightseagreen; left:0px; top:200px;}
+    100% {background: pink; left:0px; top:0px;}
+}
+@-webkit-keyframes myfirst /* Safari 与 Chrome */
+{
+    0%   {background: pink; left:0px; top:0px;}
+    25%  {background: lightsalmon; left:200px; top:0px;}
+    50%  {background: lightblue; left:200px; top:200px;}
+    75%  {background: lightseagreen; left:0px; top:200px;}
+    100% {background: pink; left:0px; top:0px;}
+}
+@keyframes second
+{
+	0%   {background: pink; left:104px; top:-104px;}
+    12%  {background: lightsalmon; left:200px; top:-104px;}
+    37%  {background: lightblue; left:200px; top:96px;}
+    62%  {background: lightseagreen; left:0px; top:96px;}
+	87%  {background: pink; left:0px; top:-104px;}
+	100% {background: pink; left:104px; top:-104px;}
+}
+@-webkit-keyframes second /* Safari 与 Chrome */
+{
+	0%   {background: pink; left:104px; top:-104px;}
+    25%  {background: lightsalmon; left:200px; top:-104px;}
+    50%  {background: lightblue; left:200px; top:96px;}
+    75%  {background: lightseagreen; left:104px; top:96px;}
+    100% {background: pink; left:104px; top:-104px;}
+}
+.canves1{
+	background: pink;
+	position: relative;
+	border-radius:50px;
+	width: 100px;
+	height: 100px;
+	animation:myfirst 5s linear 2s infinite normal;
+	-webkit-animation:myfirst 5s linear 2s infinite normal;
+}
+.canves2{
+	background: pink;
+	position: relative;
+	top:-104px;
+	left: 104px;
+	border-radius:50px;
+	width: 100px;
+	height: 100px;
+	animation:second 5s linear 1s infinite normal;
+	-webkit-animation:second 5s linear 1s infinite normal;
+}

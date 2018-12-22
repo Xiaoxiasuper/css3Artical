@@ -1,0 +1,105 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.hello{
+    position: relative;
+    background-color: white;
+    width:600px;
+    height: 600px;
+    animation: show 4s linear 1s infinite ;
+    -webkit-animation:show 4s linear 1s infinite ;
+}
+.change{
+    position: relative;
+    top:-600px;
+    background-color: black;
+    width:600px;
+    height: 600px;
+    animation: hide 4s linear 1s infinite ;
+    -webkit-animation:hide 4s linear 1s infinite ;
+    display: none;
+}
+.canves1{
+    float:left;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    animation: roller 2s linear 1s infinite ;
+    -webkit-animation:roller 2s linear 1s infinite ;
+}
+@keyframes hide{
+    0% { opacity:1;}
+    49% { opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:0;}
+}
+@-webkit-keyframes hide{
+    0% { opacity:1;}
+    49% { opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:0;}
+}
+@keyframes show{
+    0% { opacity:0;}
+    49% { opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes show{
+    0% { opacity:0;}
+    49% { opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:1;}
+}
+@keyframes roller{
+    0% { transform: rotate(0deg);}
+    100% {transform: rotate(-90deg);}
+    /* 100%{transform: rotate(0deg);opacity:1;} */
+}
+@-webkit-keyframes roller{
+    0% { transform: rotate(0deg);}
+    100% {transform: rotate(-90deg);}
+    /* 100%{transform: rotate(0deg);opacity:1;} */
+}
+@keyframes roller2{
+    0% { transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
+    /* 100%{transform: rotate(0deg);opacity:1;} */
+}
+@-webkit-keyframes roller2{
+    0% { transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
+    /* 100%{transform: rotate(0deg);opacity:1;} */
+}
+.canves2{
+    float:left;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    
+    animation: roller2 2s linear 1s infinite ;
+    -webkit-animation:roller2 2s linear 1s infinite ;
+}
+.chunk1{
+    float:left;
+    width: 10px;
+    height: 10px;
+}
+.chunk{
+    float:left;
+    background: black;
+    width: 10px;
+    height: 10px;
+}
+.chunk2{
+    float:left;
+    background: white;
+    width: 10px;
+    height: 10px;
+}
+.chunk3{
+    float:left;
+    width: 10px;
+    height: 10px;
+}
