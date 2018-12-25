@@ -29,7 +29,7 @@ window.onload=function(){
     var canves2=document.getElementsByClassName("canves2");
     var cols2=0;
     var row2=5;
-    for (var k = 0; k < paraNum+3; k++) {
+    for (var k = 0; k < paraNum; k++) {
         var myTop=-10*cols2;
         var myLeft=10*row2;
         canves2[k].style.top = myTop+'px';
@@ -42,5 +42,12 @@ window.onload=function(){
         }
         
     }
+
+    $('#start').click( function () { 
+        $('.hello').addClass("amH"); 
+        $('.canves1').addClass("amC"); 
+        $('.change').addClass("amCh"); 
+        $('.canves2').addClass("amC2"); 
+    });
    
 }

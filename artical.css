@@ -3,7 +3,7 @@
     margin:0px;
 }
 .wrapper{
-    margin:30px 30px;
+    margin:30px 100px;
     width:600px;
     height: 600px;
     overflow: hidden;
@@ -15,10 +15,12 @@
     left:-400px;
     width:1200px;
     height: 1200px;
+}
+.amH{
     animation: show 4s linear 1s infinite ;
     -webkit-animation:show 4s linear 1s infinite ;
-    
 }
+
 .change{
     position: relative;
     top:-1200px;
@@ -26,15 +28,20 @@
     background-color: black;
     width:1200px;
     height: 1200px;
+    
+}
+.amCh{
     animation: hide 4s linear 1s infinite ;
     -webkit-animation:hide 4s linear 1s infinite ;
-    /* display: none; */
 }
 .canves1{
     float:left;
     position: relative;
     width: 30px;
     height: 30px;
+    
+}
+.amC{
     animation: roller 2s linear 1s infinite ;
     -webkit-animation:roller 2s linear 1s infinite ;
 }
@@ -43,6 +50,8 @@
     position: relative;
     width: 30px;
     height: 30px;
+}
+.amC2{
     animation: roller2 2s linear 1s infinite ;
     -webkit-animation:roller2 2s linear 1s infinite ;
 }
