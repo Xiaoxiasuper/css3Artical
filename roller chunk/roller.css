@@ -1,0 +1,232 @@
+*{
+    padding:0;
+    margin:0;
+}
+/* .shadow{
+    margin:50px 50px;
+    width:203px;
+    height: 203px;
+    border-radius:5px;
+    box-shadow: 5px 5px 5px #888888;
+    animation: warpper 3s linear 0.35s infinite ;
+    -webkit-animation: warpper 3s linear 0.35s infinite ;
+} */
+.warpper{
+    margin:50px;
+    width:200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius:5px;
+    box-shadow: 5px 5px 5px #888888;
+    animation: warpper 3s linear 0.3s infinite ;
+    -webkit-animation: warpper 3s linear 0.3s infinite ;
+}
+@keyframes warpper{
+    0%   {transform: rotate(0deg)}
+    25% {transform: rotate(90deg)}
+    45% {transform: rotate(90deg)}
+    80%{transform: rotate(360deg)}
+    100%{transform: rotate(360deg)}
+}
+@-webkit-keyframes warpper{
+    0%   {transform: rotate(0deg)}
+    25% {transform: rotate(90deg)}
+    45% {transform: rotate(90deg)}
+    80%{transform: rotate(360deg)}
+    100%{transform: rotate(360deg)}
+}
+
+.warpper *{
+    position: relative;
+}
+
+.top{
+    height:65px;
+    border-bottom: 3px solid black;
+}
+.center{
+    height:20px;
+    border-bottom: 3px solid black;
+}
+
+.top-1{
+    float: left;
+    padding-top: 65px;
+    width: 40px;
+    border-right: 3px solid black;
+}
+.blue{
+    float: left;
+    padding-top:65px;
+    width:100px;
+    background: rgb(65, 168, 253);
+    animation: blue 3s linear 0.3s infinite ;
+    -webkit-animation: blue 3s linear 0.3s infinite ;
+}
+
+@keyframes blue{
+    0%   {left: 0px;}
+    25% {left:58px;}
+    45% {left:58px;}
+    76% {left:-43px}
+    80% {left:0px}
+    100%{left:0px}
+}
+@-webkit-keyframes blue{
+    
+    0%   {left: 0px;}
+    25% {left:58px;}
+    45% {left:58px;}
+    76% {left:-43px}
+    80% {left:0px}
+    100%{left:0px}
+}
+.top-3{
+    float: left;
+    padding-top:65px;
+    width:30px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+.center-1{
+    float: left;
+    padding-top: 20px;
+    width: 40px;
+    border-right: 3px solid black;
+}
+.center-2{
+    float: left;
+    padding-top:20px;
+    width:100px;
+    border-right: 3px solid black;
+}
+.black{
+    float: left;
+    padding-top:20px;
+    width:28px;
+    background: black;
+    animation: black 3s linear 0.3s infinite ;
+    -webkit-animation: black 3s linear 0.3s infinite ;
+}
+@keyframes black{
+    0%   {left: 0px;}
+    25% {left:26px;}
+    45% {left:26px;}
+    76% {left:-143px}
+    80% {left:0px}
+    100%{left:0px}
+}
+@-webkit-keyframes black{
+    0%   {left: 0px;}
+    25% {left:26px;}
+    45% {left:26px;}
+    76% {left:-143px}
+    80% {left:0px}
+    100%{left:0px}
+}
+.center-4{
+    float: left;
+    padding-top:20px;
+    width:20px;
+    border-left: 3px solid black;
+}
+.red{
+    float: left;
+    padding-top: 109px;
+    width: 40px;
+    background: red;
+    animation: red 3s linear 0.3s infinite ;
+    -webkit-animation: red 3s linear 0.3s infinite ;
+}
+@keyframes red{
+    0%   {left: 0px;}
+    25% {left:160px;}
+    45% {left:160px;}
+    /* 76% {left:0px} */
+    80% {left:0px}
+    100%{left:0px}
+}
+@-webkit-keyframes red{
+    0%   {left: 0px;}
+    25% {left:160px;}
+    45% {left:160px;}
+    /* 76% {left:0px} */
+    80% {left:0px}
+    100%{left:0px}
+}
+.bottom-2{
+    float: left;
+    width: 100px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+.bottom-2-1{
+    display: inline-block;
+    padding-top: 50px;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+.bottom-2-2{
+    display: inline-block;
+    padding-top: 50px;
+    width: 100%;
+}
+.bottom-3{
+    float: left;
+    width: 54px;
+}
+.bottom-3-1{
+    display: left;
+    padding-top: 50px;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+.yellow{
+    display: left;
+    padding-top: 56px;
+    background: yellow;
+    width: 100%;
+    animation: yellow 3s linear 0.3s infinite ;
+    -webkit-animation: yellow 3s linear 0.3s infinite ;
+}
+@keyframes yellow{
+    0%   {left: 0px;}
+    45% {left:0px;}
+    76% {left:-140px}
+    80% {left:0px}
+    100%{left:0px}
+}
+@-webkit-keyframes yellow{
+    0%   {left: 0px;}
+    45% {left:0px;}
+    76% {left:-140px}
+    80% {left:0px}
+    100%{left:0px}
+}
+.cover{
+    float: left;
+    top:-111px;
+    width: 200px;
+    height: 111px;
+
+}
+.cover-1{
+    float: left;
+    padding-top: 65px;
+    width: 187px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.cover-2{
+    float: left;
+    padding-top: 65px;
+    width: 10px;
+    border-bottom: 3px solid black;
+}
+.cover-3{
+    float: left;
+    padding-top: 43px;
+    width: 90px;
+    border-right: 3px solid black;
+}
+
