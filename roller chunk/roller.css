@@ -8,8 +8,8 @@
     height: 203px;
     border-radius:5px;
     box-shadow: 5px 5px 5px #888888;
-    animation: warpper 3s linear 0.35s infinite ;
-    -webkit-animation: warpper 3s linear 0.35s infinite ;
+    animation: warpper 3.5s linear 0.35s infinite ;
+    -webkit-animation: warpper 3.5s linear 0.35s infinite ;
 } */
 .warpper{
     margin:50px;
@@ -17,24 +17,29 @@
     height: 200px;
     border: 3px solid black;
     border-radius:5px;
-    box-shadow: 5px 5px 5px #888888;
-    animation: warpper 3s linear 0.3s infinite ;
-    -webkit-animation: warpper 3s linear 0.3s infinite ;
+    box-shadow: 5px -5px 5px #888888;
+    animation: warpper 3.5s linear 0.3s infinite ;
+    -webkit-animation: warpper 3.5s linear 0.3s infinite ;
 }
 @keyframes warpper{
-    0%   {transform: rotate(0deg)}
-    25% {transform: rotate(90deg)}
-    45% {transform: rotate(90deg)}
-    80%{transform: rotate(360deg)}
-    100%{transform: rotate(360deg)}
+    0%   {transform: rotate(0deg);box-shadow: 5px 5px 5px #888888;}
+    25% {transform: rotate(90deg);box-shadow: 5px 5px 5px #888888;}
+    30% {transform: rotate(90deg);box-shadow: 5px -5px 5px #888888;}
+    74% {transform: rotate(360deg);box-shadow: 5px 5px 5px #888888;}
+    77% {transform: rotate(380deg);box-shadow: 5px 5px 5px #888888;}
+    80%{transform: rotate(360deg);box-shadow: 5px 5px 5px #888888;}
+    100%{transform: rotate(360deg);box-shadow: 5px 5px 5px #888888;}
 }
 @-webkit-keyframes warpper{
-    0%   {transform: rotate(0deg)}
-    25% {transform: rotate(90deg)}
-    45% {transform: rotate(90deg)}
-    80%{transform: rotate(360deg)}
-    100%{transform: rotate(360deg)}
+    0%   {transform: rotate(0deg);box-shadow: 5px 5px 5px #888888;}
+    25% {transform: rotate(90deg);box-shadow: 5px 5px 5px #888888;}
+    30% {transform: rotate(90deg);box-shadow: 5px -5px 5px #888888;}
+    74% {transform: rotate(360deg);box-shadow: 5px 5px 5px #888888;}
+    77% {transform: rotate(380deg);box-shadow: 5px 5px 5px #888888;}
+    80%{transform: rotate(360deg);box-shadow: 5px 5px 5px #888888;}
+    100%{transform: rotate(360deg);box-shadow: 5px 5px 5px #888888;}
 }
+
 
 .warpper *{
     position: relative;
@@ -60,15 +65,15 @@
     padding-top:65px;
     width:100px;
     background: rgb(65, 168, 253);
-    animation: blue 3s linear 0.3s infinite ;
-    -webkit-animation: blue 3s linear 0.3s infinite ;
+    animation: blue 3.5s linear 0.3s infinite ;
+    -webkit-animation: blue 3.5s linear 0.3s infinite ;
 }
 
 @keyframes blue{
     0%   {left: 0px;}
     25% {left:58px;}
-    45% {left:58px;}
-    76% {left:-43px}
+    30% {left:58px;}
+    66% {left:-43px}
     80% {left:0px}
     100%{left:0px}
 }
@@ -76,8 +81,8 @@
     
     0%   {left: 0px;}
     25% {left:58px;}
-    45% {left:58px;}
-    76% {left:-43px}
+    30% {left:58px;}
+    66% {left:-43px}
     80% {left:0px}
     100%{left:0px}
 }
@@ -105,22 +110,22 @@
     padding-top:20px;
     width:28px;
     background: black;
-    animation: black 3s linear 0.3s infinite ;
-    -webkit-animation: black 3s linear 0.3s infinite ;
+    animation: black 3.5s linear 0.3s infinite ;
+    -webkit-animation: black 3.5s linear 0.3s infinite ;
 }
 @keyframes black{
     0%   {left: 0px;}
     25% {left:26px;}
-    45% {left:26px;}
-    76% {left:-143px}
+    30% {left:26px;}
+    66% {left:-143px}
     80% {left:0px}
     100%{left:0px}
 }
 @-webkit-keyframes black{
     0%   {left: 0px;}
     25% {left:26px;}
-    45% {left:26px;}
-    76% {left:-143px}
+    30% {left:26px;}
+    66% {left:-143px}
     80% {left:0px}
     100%{left:0px}
 }
@@ -135,23 +140,23 @@
     padding-top: 109px;
     width: 40px;
     background: red;
-    animation: red 3s linear 0.3s infinite ;
-    -webkit-animation: red 3s linear 0.3s infinite ;
+    animation: red 3.5s linear 0.3s infinite ;
+    -webkit-animation: red 3.5s linear 0.3s infinite ;
 }
 @keyframes red{
     0%   {left: 0px;}
     25% {left:160px;}
-    45% {left:160px;}
+    30% {left:160px;}
     /* 76% {left:0px} */
-    80% {left:0px}
+    70% {left:0px}
     100%{left:0px}
 }
 @-webkit-keyframes red{
     0%   {left: 0px;}
     25% {left:160px;}
-    45% {left:160px;}
+    30% {left:160px;}
     /* 76% {left:0px} */
-    80% {left:0px}
+    70% {left:0px}
     100%{left:0px}
 }
 .bottom-2{
@@ -186,20 +191,20 @@
     padding-top: 56px;
     background: yellow;
     width: 100%;
-    animation: yellow 3s linear 0.3s infinite ;
-    -webkit-animation: yellow 3s linear 0.3s infinite ;
+    animation: yellow 3.5s linear 0.3s infinite ;
+    -webkit-animation: yellow 3.5s linear 0.3s infinite ;
 }
 @keyframes yellow{
     0%   {left: 0px;}
-    45% {left:0px;}
-    76% {left:-140px}
+    30% {left:0px;}
+    66% {left:-140px}
     80% {left:0px}
     100%{left:0px}
 }
 @-webkit-keyframes yellow{
     0%   {left: 0px;}
-    45% {left:0px;}
-    76% {left:-140px}
+    30% {left:0px;}
+    66% {left:-140px}
     80% {left:0px}
     100%{left:0px}
 }
